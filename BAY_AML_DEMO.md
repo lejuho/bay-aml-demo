@@ -9,6 +9,7 @@ ERC-3643 공식 구현 위에 얇은 래퍼 컨트랙트 하나를 추가해, �
 - 저장소: https://github.com/ERC-3643/ERC-3643
 - 커밋: `2f0704dee9658ad9cd5b6ed82e7427da74c28345` (패키지 버전 4.1.3)
 - Solidity 0.8.17, Hardhat (저장소 설정 그대로)
+- 이 저장소는 위 커밋에서 포크했고, 데모 코드는 `bay-aml-demo` 브랜치에 있다.
 
 ## 추가한 파일
 
@@ -20,9 +21,9 @@ ERC-3643 공식 구현 위에 얇은 래퍼 컨트랙트 하나를 추가해, �
 ## 실행
 
 ```bash
-git clone https://github.com/ERC-3643/ERC-3643.git && cd ERC-3643
-git checkout 2f0704dee9658ad9cd5b6ed82e7427da74c28345
-git apply ../bay-aml-demo.patch
+git clone https://github.com/lejuho/bay-aml-demo.git
+cd bay-aml-demo
+git switch bay-aml-demo
 npm install
 npx hardhat test test/aml/reasoned-freeze.test.ts
 ```
