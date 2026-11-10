@@ -276,7 +276,7 @@ describe('BAY AML Demo - ReasonedFreeze', () => {
       expect(await token.isFrozen(bobWallet.address)).to.equal(true);
     });
 
-    it('다른 Agent 가 토큰에 직접 동결하면 근거 기록 없이도 집행된다', async () => {
+    it('래퍼를 거치지 않고 토큰에 직접 동결하면 근거 기록 없이도 집행된다', async () => {
       const {
         freezer,
         suite: { token },

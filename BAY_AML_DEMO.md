@@ -45,7 +45,7 @@ npx hardhat test test/aml/reasoned-freeze.test.ts
 | 2. 동결과 해제 | 동결 시 사유·근거·만료 기록, A→B와 B→A가 `wallet is frozen`으로 실패, 운영자 해제 후 재개, 기록 유지 |
 | 3. 거부되는 조치 | 근거 없는 동결, 기한 없는 동결, 30일 초과 동결, 무권한 동결·해제 |
 | 4. 만료 | 만료 전 해제 불가, 만료 후 당사자가 직접 해제, 연장에는 새 근거 필요 |
-| 한계 | `forcedTransfer`는 동결을 우회, 다른 Agent의 직접 동결은 기록 없이 집행 |
+| 한계 | `forcedTransfer`는 동결을 우회, 래퍼를 거치지 않는 토큰 직접 동결은 기록 없이 집행 |
 
 ## 한계
 
